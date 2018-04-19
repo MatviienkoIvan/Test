@@ -5,7 +5,7 @@ var result = [];
 	param.map(function(item){
 		let res ={};
 		res.id = item.id;
-		if(item.model=="BMW"){
+		if(item.model=="BMW" && item.color == "red"){
 			res.title = "Best car";
 		}else if(item.color == "red"){
 			res.title = item.color + " car"
@@ -17,3 +17,17 @@ var result = [];
 		result.push(res)
 	});
 console.log(result)
+
+var result = [];
+	param.map(function(item){
+		switch(item.color || item.model){
+			case "red":			
+			res.title = item.color + " car";
+			break;
+			case "black":			
+			res.title = item.color + " car";
+			break;
+			case "BMW":			
+			res.title = "Best car";
+			break;
+		}
