@@ -7,8 +7,12 @@ var result = [];
 		res.id = item.id;
 		if(item.model=="BMW"){
 			res.title = "Best car";
+		}else if(item.color == "red"){
+			res.title = item.color + " car"
+		}else if(item.color == "black"){
+			res.title = item.color + " car"
 		}else{
-			res.title = item.color + " " + item.model
+			res.title ="Сar"
 		}
 		result.push(res)
 	});
