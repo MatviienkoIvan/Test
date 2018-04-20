@@ -17,17 +17,3 @@ var result = [];
 		result.push(res)
 	});
 console.log(result)
-
-var result = [];
-	param.map(function(item){
-		switch(item.color || item.model){
-			case "red":			
-			res.title = item.color + " car";
-			break;
-			case "black":			
-			res.title = item.color + " car";
-			break;
-			case "BMW":			
-			res.title = "Best car";
-			break;
-		}
